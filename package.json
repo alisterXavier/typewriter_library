@@ -1,0 +1,72 @@
+{
+  "name": "typewriter_library",
+  "version": "1.0.1",
+  "description": "",
+  "main": "dist/cjs/index.js",
+  "module": "dist/esm/index.js",
+  "types": "dist/types.d.ts",
+  "private": false,
+  "publishConfig": {
+    "//": "registry : https://npm.pkg.github.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/alisterXavier/typewriter_library.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "storybook": "concurrently \"storybook dev -p 6006\" \"npx tailwindcss -i ./src/globals.css -o ./src/output.css --watch\"",
+    "build-storybook": "storybook build",
+    "rollup": "rollup -c --bundleConfigAsCjs"
+  },
+  "devDependencies": {
+    "@babel/preset-react": "^7.24.7",
+    "@chromatic-com/storybook": "^1.5.0",
+    "@rollup/plugin-babel": "^6.0.4",
+    "@rollup/plugin-commonjs": "^26.0.1",
+    "@rollup/plugin-node-resolve": "^15.2.3",
+    "@rollup/plugin-terser": "^0.4.4",
+    "@rollup/plugin-typescript": "^11.1.6",
+    "@storybook/addon-essentials": "^8.1.10",
+    "@storybook/addon-interactions": "^8.1.10",
+    "@storybook/addon-links": "^8.1.10",
+    "@storybook/addon-onboarding": "^8.1.10",
+    "@storybook/addon-postcss": "^2.0.0",
+    "@storybook/addon-styling-webpack": "^1.0.0",
+    "@storybook/addon-webpack5-compiler-swc": "^1.0.4",
+    "@storybook/blocks": "^8.1.10",
+    "@storybook/react": "^8.1.10",
+    "@storybook/react-webpack5": "^8.1.10",
+    "@storybook/test": "^8.1.10",
+    "@types/jest": "^29.5.12",
+    "@types/node": "^20.14.8",
+    "@types/react": "^18.3.3",
+    "@types/react-dom": "^18.3.0",
+    "autoprefixer": "^10.4.19",
+    "babel-core": "^7.0.0-bridge.0",
+    "babel-loader": "^9.1.3",
+    "postcss": "^8.4.38",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "rollup": "^4.18.0",
+    "rollup-plugin-dts": "^6.1.1",
+    "rollup-plugin-peer-deps-external": "^2.2.4",
+    "rollup-plugin-postcss": "^4.0.2",
+    "storybook": "^8.1.10",
+    "tailwindcss": "^3.4.4",
+    "typescript": "^5.5.2"
+  },
+  "peerDependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "author": "Typewriter",
+  "license": "ISC",
+  "dependencies": {
+    "@gsap/react": "^2.1.1",
+    "concurrently": "^8.2.2",
+    "framer-motion": "^11.2.11",
+    "gsap": "^3.12.5",
+    "split-type": "^0.3.4"
+  }
+}
