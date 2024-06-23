@@ -13,7 +13,7 @@ npm install typewriter_library
 The Marquee component provides a customizable text scrolling effect using GSAP and ScrollTrigger, tailored for React applications. It supports both directional and non-directional scrolling and allows dynamic control over text content, velocity, and visual styling.
 
 ````tsx
-import { Marquee } from 'your-library-name';
+import { Marquee } from 'typewriter_library';
 
 // Example usage
 const MyComponent = () => {
@@ -34,7 +34,7 @@ const MyComponent = () => {
 The StaggerText component enables animated text effects with staggering using GSAP, enhancing typographic displays in React. It supports animations such as translation, opacity changes, and skew effects, offering fine-grained control over timing, delays, and visual properties for each character or element of the text.
 
 ````tsx
-import { StaggerText } from 'your-library-name';
+import { StaggerText } from 'typewriter_library';
 
 // Example usage
 const MyText = () => {
